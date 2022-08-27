@@ -59,7 +59,7 @@ public class Profesor extends Empleado implements Comparable<Empleado> {	//Hered
 		Profesor other = (Profesor) obj;
 		
 		
-		return  antiguedadDocente == other.antiguedadDocente && Objects.equals(cargo, other.cargo);
+		return this.getNombre() == other.getNombre() && this.getEdad() == other.getEdad() && antiguedadDocente == other.antiguedadDocente && Objects.equals(cargo, other.cargo);
 	}
 	
 	@Override
