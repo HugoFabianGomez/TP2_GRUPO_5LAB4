@@ -40,7 +40,7 @@ public class Profesor extends Empleado implements Comparable<Empleado> {	//Hered
 	// Función ToString()
 	@Override
 	public String toString() {
-		return super.toString() + " cargo= " + cargo + " antiguedadDocente= " + antiguedadDocente;
+		return super.toString() + "\nCargo: " + cargo + "\nAntiguedad Docente: " + antiguedadDocente + "%\n";
 	}
 
 	@Override
@@ -59,7 +59,7 @@ public class Profesor extends Empleado implements Comparable<Empleado> {	//Hered
 		Profesor other = (Profesor) obj;
 		
 		
-		return antiguedadDocente == other.antiguedadDocente && Objects.equals(cargo, other.cargo);
+		return  antiguedadDocente == other.antiguedadDocente && Objects.equals(cargo, other.cargo);
 	}
 	
 	@Override

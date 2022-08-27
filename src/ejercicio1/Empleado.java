@@ -40,11 +40,11 @@ public class Empleado {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-	
+
 	//Methods
 	@Override
 	public String toString() {
-		return "ID de Empleado: " + id + " Nombre: " + nombre + " Edad: " + edad;
+		return "ID de Empleado: " + id + "\nNombre: " + nombre + "\nEdad: " + edad;
 	}
 	
 	public static int devuelveProximoID() {
